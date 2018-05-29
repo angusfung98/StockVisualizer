@@ -67,7 +67,7 @@ def redrawAll(canvas, data):
         canvas.create_text(data.pricePosition,
                            text="(%s , %.2f)" % (data.csv.date[data.position], data.csv.prices[data.position]),
                            anchor="s")
-    canvas.create_text(data.width/2,0, text = " ShiTrade", anchor = "n")
+    canvas.create_text(data.width/2,0, text = " VizTrade", anchor = "n")
     canvas.create_text(data.width/2, data.height -20 , text = "Enter a Stock" ,anchor = 'e' )
 
     canvas.create_rectangle(data.width/2, data.height -40, data.width/2 + 100, data.height, fill = "white")
